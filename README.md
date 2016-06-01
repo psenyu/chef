@@ -1,6 +1,6 @@
 myredis Cookbook
 ================
-TODO: Enter the cookbook description here.
+This cookbook make a redis-sentinel cluster 
 
 e.g.
 This cookbook makes your favorite breakfast sandwich.

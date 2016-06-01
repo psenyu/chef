@@ -1,0 +1,10 @@
+default['myredis']['epel'] = 'epel-release-6-8.noarch.rpm'
+default['myredis']['epelurl'] = 'http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm'
+default['myredis']['remi'] = 'remi-release-6.rpm'
+default['myredis']['remiurl'] = 'http://rpms.famillecollet.com/enterprise/remi-release-6.rpm'
+#default['myredis']['nodes']['ipaddress'] = [ '172.31.54.194', '172.31.54.195', '172.31.54.196' ]
+default['myredis']['port'] = 6379
+default['myredis']['master']['ipaddress'] = '172.31.53.131'
+default['myredis']['sentinel']['cluster_name'] = 'mymaster'
+default['myredis']['sentinel']['quarum'] = 2
+default['myredis']['sentinel']['port'] = 16379

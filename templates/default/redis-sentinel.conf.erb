@@ -1,0 +1,9 @@
+port <%= @myredis_sentinel_port %>
+sentinel monitor <%= @myredis_sentinel_cluster_name %> <%= @myredis_master_ipaddress %> <%= @myredis_port %> <%= @myredis_sentinel_quarum %>
+sentinel down-after-milliseconds <%= @myredis_sentinel_cluster_name %> 5000
+sentinel failover-timeout <%= @myredis_sentinel_cluster_name %> 10000
+protected-mode no
+logfile "/var/log/redis/sentinel.log"
+sentinel parallel-syncs mymaster 1
+bind <%= @myredis_nodes_ipaddress %>
+daemonize yes
